@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aevum pénztár</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Vissza az Aevum főoldalra">
+      <span class="brand-mark"></span>
+      Aevum
+    </a>
+    <nav class="nav" aria-label="Fő navigáció">
+      <a href="index.html#collection">Kollekció</a>
+      <a href="index.html#craft">Kivitel</a>
+      <a href="index.html#journal">Napló</a>
+    </nav>
+    <a class="icon-button bubble-button primary" href="index.html#collection">Vissza</a>
+  </header>
+
+  <main>
+    <section class="checkout-hero">
+      <div class="checkout-copy reveal">
+        <p class="eyebrow">Pénztár</p>
+        <h1>Rendelés</h1>
+        <p class="hero-text">Add meg az adataidat, és előkészítjük az Aevum órád kiszállítását.</p>
+      </div>
+
+      <form class="checkout-form reveal" id="checkoutForm">
+        <div class="cart-summary">
+          <div class="cart-summary-head">
+            <span>Kosarad</span>
+            <strong id="cartTotal">0 Ft</strong>
+          </div>
+          <div class="cart-items" id="cartItems" aria-live="polite"></div>
+          <a class="bubble-button small" href="index.html#collection">További órák hozzáadása</a>
+        </div>
+
+        <label>
+          Név
+          <input type="text" name="name" autocomplete="name" placeholder="Teljes név" required>
+        </label>
+
+        <label>
+          Szállítási cím
+          <textarea name="address" rows="4" autocomplete="shipping street-address" placeholder="Irányítószám, város, utca, házszám" required></textarea>
+        </label>
+
+        <div class="form-row">
+          <label>
+            E-mail
+            <input type="email" name="email" autocomplete="email" placeholder="nev@email.hu" required>
+          </label>
+
+          <label>
+            Telefonszám
+            <input type="tel" name="phone" autocomplete="tel" placeholder="+36 30 123 4567" required>
+          </label>
+        </div>
+
+        <button class="bubble-button primary checkout-submit" type="submit">Rendelés elküldése</button>
+        <p class="form-note" id="formNote" aria-live="polite">A gomb jelenleg bemutatóként működik, fizetést még nem indít.</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

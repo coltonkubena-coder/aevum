@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aevum órák</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Aevum főoldal">
+      <span class="brand-mark"></span>
+      Aevum
+    </a>
+    <nav class="nav" aria-label="Fő navigáció">
+      <a href="#collection">Kollekció</a>
+      <a href="#craft">Kivitel</a>
+      <a href="#journal">Napló</a>
+    </nav>
+    <a class="icon-button bubble-button primary cart-link" href="checkout.html" aria-label="Kosár megnyitása">
+      <svg class="shopping-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true">
+        <path d="M 22 32 C 27 32, 29 36, 31 42 L 36 62 A 6 6 0 0 0 42 67 L 68 67 A 6 6 0 0 0 74 62 L 78 42 A 3 3 0 0 0 75 39 L 33 39" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="43" cy="77" r="5" fill="#ffffff"/>
+        <circle cx="67" cy="77" r="5" fill="#ffffff"/>
+      </svg>
+      Kosár
+      <span class="cart-count" data-cart-count>0</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Automata órák modern mindennapokra</p>
+        <h1>Aevum</h1>
+        <p class="hero-text">Letisztult időmérők csendes precizitással, formált acéllal és kristálytiszta számlappal minden olyan órához, amely figyelmet érdemel.</p>
+        <div class="hero-actions">
+          <a class="bubble-button primary" href="#collection">Kollekció megnyitása</a>
+          <a class="bubble-button secondary" href="#craft">Kivitel felfedezése</a>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal" aria-label="Kiemelt Aevum óra">
+        <div class="watch-orbit">
+          <div class="watch-shadow"></div>
+          <div class="watch featured-watch">
+            <div class="strap strap-top"></div>
+            <div class="case">
+              <div class="dial">
+                <span class="marker m12"></span>
+                <span class="marker m3"></span>
+                <span class="marker m6"></span>
+                <span class="marker m9"></span>
+                <span class="hand hour-hand" data-scroll-hour></span>
+                <span class="hand minute-hand" data-scroll-minute></span>
+                <span class="pin"></span>
+                <span class="dial-brand">AEVUM</span>
+              </div>
+            </div>
+            <div class="strap strap-bottom"></div>
+          </div>
+        </div>
+        <div class="floating-note note-one">41 mm acél</div>
+        <div class="floating-note note-two">72 óra járástartalék</div>
+      </div>
+    </section>
+
+    <section id="collection" class="section collection">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Új kollekció</p>
+        <h2>Tiszta formák, tartós jelenlét.</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <div class="mini-watch silver">
+            <span class="mini-strap"></span>
+            <span class="mini-case"></span>
+          </div>
+          <div>
+            <h3>Aevum Mono</h3>
+            <p>Csiszolt acél, elefántcsont számlap, zafírkristály.</p>
+          </div>
+          <div class="card-footer product-actions">
+            <span>159 000 Ft</span>
+            <div class="quantity-control" data-product-control="mono">
+              <button class="bubble-button primary small add-to-cart" type="button" data-product="mono">
+                <span class="add-label">Hozzáadás</span>
+                <span class="item-count" data-item-count="mono">0</span>
+              </button>
+              <button class="plus-button bubble-button primary" type="button" data-plus-product="mono" aria-label="Még egy Aevum Mono hozzáadása">+</button>
+            </div>
+            <a class="bubble-button small" href="checkout.html?ora=Aevum%20Mono">Pénztár</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="mini-watch graphite">
+            <span class="mini-strap"></span>
+            <span class="mini-case"></span>
+          </div>
+          <div>
+            <h3>Aevum Noct</h3>
+            <p>Matt grafit tok mélyfekete számlappal.</p>
+          </div>
+          <div class="card-footer product-actions">
+            <span>189 000 Ft</span>
+            <div class="quantity-control" data-product-control="noct">
+              <button class="bubble-button primary small add-to-cart" type="button" data-product="noct">
+                <span class="add-label">Hozzáadás</span>
+                <span class="item-count" data-item-count="noct">0</span>
+              </button>
+              <button class="plus-button bubble-button primary" type="button" data-plus-product="noct" aria-label="Még egy Aevum Noct hozzáadása">+</button>
+            </div>
+            <a class="bubble-button small" href="checkout.html?ora=Aevum%20Noct">Pénztár</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="mini-watch copper">
+            <span class="mini-strap"></span>
+            <span class="mini-case"></span>
+          </div>
+          <div>
+            <h3>Aevum Sol</h3>
+            <p>Meleg acél részletek kifinomult taupe számlappal.</p>
+          </div>
+          <div class="card-footer product-actions">
+            <span>169 000 Ft</span>
+            <div class="quantity-control" data-product-control="sol">
+              <button class="bubble-button primary small add-to-cart" type="button" data-product="sol">
+                <span class="add-label">Hozzáadás</span>
+                <span class="item-count" data-item-count="sol">0</span>
+              </button>
+              <button class="plus-button bubble-button primary" type="button" data-plus-product="sol" aria-label="Még egy Aevum Sol hozzáadása">+</button>
+            </div>
+            <a class="bubble-button small" href="checkout.html?ora=Aevum%20Sol">Pénztár</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="craft" class="section craft reveal">
+      <div>
+        <p class="eyebrow">Úgy készült, hogy természetesen illeszkedjen a napodba</p>
+        <h2>Minden részlet mért, kiegyensúlyozott és visszafogott.</h2>
+      </div>
+      <div class="craft-list">
+        <div>
+          <span>01</span>
+          <p>Karcálló zafírüveg tükröződéscsökkentő bevonattal.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <p>Automata szerkezet finom, halk és egyenletes járással.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p>Gyorskioldós szíjak acélból, bőrből és szőtt nejlonból.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="journal" class="section journal">
+      <div class="journal-panel reveal">
+        <p class="eyebrow">Aevum napló</p>
+        <h2>A precizitás személyessé válik.</h2>
+        <p>Ápolási útmutatók, stílusjegyzetek és műhelytitkok az Aevum stúdióból.</p>
+        <a class="bubble-button primary" href="checkout.html">Vásárlás indítása</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
